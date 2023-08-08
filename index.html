@@ -4,66 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codelândia - blog</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
-    <header>      
+    <header>
       <div class="text-header">
         <span class="text-header-span">Codelândia</span>
         <span class="text-header-span">blog</span>
-      </div> 
+      </div>
       <input class="input-text" type="text" placeholder="Pesquisar no blog" />
     </header>
     <main>
-      <article class="text-info">
-        <div class="data-like">
-          <p>02 de jul, 2021</p>
-          <img src="img/heart.svg" alt="like" />
-        </div>
-        <h2 class="news-title">Agora é oficial: o Windows 11 está vindo</h2>
-        <p class="news-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat massa lectus, vitae tempor nibh commodo non.
-        </p>
-      </article>
-      <article class="text-info">
-        <div class="data-like">
-          <p>02 de jul, 2021</p>
-          <img src="img/heart.svg" alt="like" />
-        </div>
-        <h2 class="news-title">
-          Tim Berners-Lee vai leiloar código-fonte da web
-        </h2>
-        <p class="news-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat massa lectus, vitae tempor nibh commodo non. Sed luctus odio ac dui volutpat cursus. Sed vulputate vitae lorem in convallis.
-        </p>
-      </article>
-      <article class="text-info">
-        <div class="data-like">
-          <p>02 de jul, 2021</p>
-          <img src="img/heart.svg" alt="like" />
-        </div>
-        <h2 class="news-title">
-          Tem firefox novo no pedaço e você vai querer migrar
-        </h2>
-        <p class="news-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat massa lectus, vitae tempor nibh commodo non.
-        </p>
-      </article>
-      <article class="text-info">
-        <div class="data-like">
-          <p>02 de jul, 2021</p>
-          <img src="img/heart.svg" alt="like" />
-        </div>
-        <h2 class="news-title">
-          John McAfee, criado do antivírusMcAfee, morre
-        </h2>
-        <p class="news-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat massa lectus, vitae tempor nibh commodo non. Sed luctus odio ac dui volutpat cursus. Sed vulputate vitae lorem in convallis. In sit amet scelerisque odio, id posuere est. Nunc et lectus vitae odio semper pretium vitae vel felis.
-        </p>
-      </article>
+      <ul class="list-publi">
+        <li class="publi">
+          <div class="data-like">
+            <p>02 de jul, 2021</p>
+            <img src="img/heart.svg" alt="like" />
+          </div>
+          <h2 class="news-title">
+            Tim Berners-Lee vai leiloar código-fonte da web
+          </h2>
+          <p class="news-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            placerat massa lectus, vitae tempor nibh commodo non. Sed luctus
+            odio ac dui volutpat cursus. Sed vulputate vitae lorem in convallis.
+          </p>
+        </li>
+        <li class="publi">
+          <div class="data-like">
+            <p>02 de jul, 2021</p>
+            <img src="img/heart.svg" alt="like" />
+          </div>
+          <h2 class="news-title">Agora é oficial: o Windows 11 está vindo</h2>
+          <p class="news-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            placerat massa lectus, vitae tempor nibh commodo non.
+          </p>
+        </li>
+        <li class="publi">
+          <div class="data-like">
+            <p>02 de jul, 2021</p>
+            <img src="img/heart.svg" alt="like" />
+          </div>
+          <h2 class="news-title">
+            Tem firefox novo no pedaço e você vai querer migrar
+          </h2>
+          <p class="news-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            placerat massa lectus, vitae tempor nibh commodo non.
+          </p>
+        </li>
+        <li class="publi">
+          <div class="data-like">
+            <p>02 de jul, 2021</p>
+            <img src="img/heart.svg" alt="like" />
+          </div>
+          <h2 class="news-title">
+            John McAfee, criado do antivírusMcAfee, morre
+          </h2>
+          <p class="news-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            placerat massa lectus, vitae tempor nibh commodo non. Sed luctus
+            odio ac dui volutpat cursus. Sed vulputate vitae lorem in convallis.
+            In sit amet scelerisque odio, id posuere est. Nunc et lectus vitae
+            odio semper pretium vitae vel felis.
+          </p>
+        </li>
+      </ul>
     </main>
   </body>
+  <script>
+    const sr = ScrollReveal({
+      origin: "top",
+      distance: "50px",
+      duration: 2000,
+      reset: true,
+    });
+
+    ScrollReveal().reveal(".publi", { delay: 200 });
+    ScrollReveal().reveal(".data-like", { delay: 400 });
+    ScrollReveal().reveal(".news-title", { delay: 500 });
+    ScrollReveal().reveal(".news-text", { delay: 600 });
+  </script>
 </html>

@@ -58,72 +58,72 @@ header {
   font-weight: 300;
 }
 
-.input-text:hover{
-    border: 2px solid var(--white);
-    box-shadow: 0 0 3px rgba(240, 239, 239, 0.425) ;
+.input-text:hover {
+  border: 2px solid var(--white);
+  box-shadow: 0 0 3px rgba(240, 239, 239, 0.425);
 }
-.text-header-span:hover{
-    color: var(--title);
-    font-weight: bold;
-}
-
-.text-info{
-    background:var(--white); 
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;  
-    width: 80%;
-    height: auto;
-    padding: 15px;
-    margin: 20px auto;
-    border-radius: 5px;
-    box-shadow: 2px 1px 3px rgba(10, 10, 10, 0.253) ;
+.text-header-span:hover {
+  color: var(--title);
+  font-weight: bold;
 }
 
-.data-like{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 8px;
+.publi {
+  background: var(--white);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 2px 1px 3px rgba(10, 10, 10, 0.253);
 }
 
-.news-title{
-    color: var(--title);
-    margin-bottom: 6px;
-    font-size: 20px;
-    text-align: justify;
+.data-like {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
 }
 
-p{
-    color: var(--text);
+.news-title {
+  color: var(--title);
+  margin-bottom: 6px;
+  font-size: 20px;
+  text-align: justify;
 }
 
-.news-text{
-    font-size: 15px;
-    margin: 8px 0;
-    text-align: justify;
+p {
+  color: var(--text);
 }
 
-@media (max-width:768px){
-  .text-header{
+.news-text {
+  font-size: 15px;
+  margin: 8px 0;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .text-header {
     font-size: 15px;
   }
-  .input-text::placeholder{
+  .input-text::placeholder {
     font-size: 12px;
   }
-  .news-title{
+  .news-title {
     font-size: 15px;
     margin-bottom: 3px;
   }
 
-  .news-text{
+  .news-text {
     font-size: 12px;
     margin-bottom: 3px;
   }
 
-  p{
+  p {
     font-size: 12px;
   }
-
+  
 }
